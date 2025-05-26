@@ -60,6 +60,13 @@ async def run_chat_loop(handle_user_input: Callable[[str], Awaitable[None]], tit
           clear_screen()
           print(f"🚀 Start chatting with your {title}...\n💬 Type your question and hit enter. Type 'exit' or 'quit' to leave. Type 'clear' to clear the screen.\n")
           continue
+        elif user_input.lower() == "history":
+          print("\n📜 Chat History (last 100 entries):")
+          history = [readline.get_history_item(i) for i in range(1, readline.get_current_history_length() + 1)]
+          for idx, entry in enumerate(history[-100:], 1):
+            print(f"{idx}: {entry}")
+          print()
+          continue
         if user_input:
           readline.add_history(user_input)
           spinner_task = asyncio.create_task(spinner())

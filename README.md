@@ -7,11 +7,11 @@ Effortlessly interact with multiple protocols using a lightweight, intuitive com
 
 ## ✨ Features
 
-- 🔄 Command history support
-- 📝 Support for multiline inputs
-- 🚀 Lightweight and fast
 - 🔌 Easy integration with multiple protocols (ACP, A2A, MCP)
 - 💬 Friendly and intuitive chat UI for the command-line interface
+- 🚀 Lightweight and fast
+- 🔄 Command history support
+
 
 ## ⚙️ Setup
 
