@@ -7,7 +7,7 @@ from uuid import uuid4
 from typing import Any
 from rich.markdown import Markdown
 from rich.console import Console
-from agent_cli_chat_client.chat_interface import run_chat_loop, render_answer
+from agent_chat_cli.chat_interface import run_chat_loop, render_answer
 
 import httpx
 from a2a.client import A2AClient

@@ -7,7 +7,7 @@ import asyncio
 from dotenv import load_dotenv
 from rich.console import Console
 from httpx_sse import ServerSentEvent
-from agent_cli_chat_client.chat_interface import run_chat_loop, render_answer
+from agent_chat_cli.chat_interface import run_chat_loop, render_answer
 
 from agntcy_acp import AsyncACPClient, ApiClientConfiguration
 from agntcy_acp.acp_v0.async_client.api_client import ApiClient as AsyncApiClient

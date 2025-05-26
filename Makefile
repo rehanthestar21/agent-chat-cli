@@ -81,15 +81,15 @@ ruff-fix: setup-venv ## Auto-fix lint issues with ruff
 
 run-acp-client: setup-venv build install ## Run ACP client script
 	@$(MAKE) check-env
-	@$(venv-run) uv run python -m agent_cli_chat_client acp
+	@$(venv-run) uv run python -m agent_chat_cli acp
 
-run-a2a-client: setup-venv ## Run A2A client script
+run-a2a-client: setup-venv build install ## Run A2A client script
 	@$(MAKE) check-env
-	@$(venv-run) uv run python -m agent_cli_chat_client a2a
+	@$(venv-run) uv run python -m agent_chat_cli a2a
 
-run-mcp-client: setup-venv ## Run MCP client script
+run-mcp-client: setup-venv build install ## Run MCP client script
 	@$(MAKE) check-env
-	@$(venv-run) uv run python -m agent_cli_chat_client mcp
+	@$(venv-run) uv run python -m agent_chat_cli mcp
 ## ========== Tests ==========
 
 test: setup-venv build ## Run tests using pytest and coverage

@@ -1,5 +1,5 @@
 [project]
-name = "agent-cli-chat-client"
+name = "agent-chat-cli"
 version = "0.1.0"
 description = ""
 authors = [

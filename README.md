@@ -37,7 +37,8 @@ MCP_PORT=9000
 ### Running with UV
 
 ```bash
-uv run github.com/cnoe-io/agent-cli-chat-client <acp|a2a|mcp>
+```bash
+uv run github.com/cnoe-io/agent-chat-cli <acp|a2a|mcp>
 ```
 
 ## Quick Demos

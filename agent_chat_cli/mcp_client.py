@@ -6,7 +6,7 @@ import asyncio
 import uuid
 import httpx
 from sseclient import SSEClient
-from chat_interface import run_chat_loop, render_answer
+from agent_chat_cli.chat_interface import run_chat_loop, render_answer
 
 # === Environment Configuration ===
 AGENT_NAME = os.getenv("AGENT_NAME", "MCP Client")
