@@ -34,11 +34,20 @@ MCP_PORT=9000
 
 ## 🚀 Usage
 
-### Running with UV
+### Running with UVX
 
 ```bash
+uvx https://github.com/cnoe-io/agent-chat-cli.git <acp|a2a|mcp>
+```
+
+### Running locally
+
 ```bash
-uv run github.com/cnoe-io/agent-chat-cli <acp|a2a|mcp>
+make run-acp-client
+```
+
+```bash
+make run-a2a-client
 ```
 
 ## Quick Demos
