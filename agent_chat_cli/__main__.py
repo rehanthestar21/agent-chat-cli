@@ -67,8 +67,7 @@ def a2a(host, port, token, debug):
         logging.getLogger().setLevel(logging.DEBUG)
     click.echo("🚀 Launching A2A client...")
     client_module = load_client_module("a2a")
-    import asyncio
-    asyncio.run(client_module.main(host=host, port=port, token=token))
+    client_module.main(host=host, port=port, token=token)
 
 
 if __name__ == '__main__':
