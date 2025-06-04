@@ -30,7 +30,7 @@ def render_answer(answer: str):
     console.print(Markdown(answer))
   else:
     console.print("[italic]🤷 No answer returned.[/italic]")
-  console.print("\n\n")
+  console.print("\n")
 
 def clear_screen():
   """Clear the console screen based on the operating system."""

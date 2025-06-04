@@ -19,6 +19,7 @@ from a2a.types import (
     MessageSendParams,
 )
 import warnings
+import logging
 
 warnings.filterwarnings(
     "ignore",
@@ -26,6 +27,15 @@ warnings.filterwarnings(
     category=DeprecationWarning,
     module=".*"
 )
+
+# Configure root logger
+logging.basicConfig(
+  level=logging.INFO,
+  format="%(asctime)s %(levelname)s %(name)s: %(message)s"
+)
+
+# Suppress logging for 'a2a' module to WARNING
+logging.getLogger("a2a").setLevel(logging.WARNING)
 
 AGENT_HOST = os.environ.get("A2A_AGENT_HOST", "localhost")
 AGENT_PORT = os.environ.get("A2A_AGENT_PORT", "8000")
